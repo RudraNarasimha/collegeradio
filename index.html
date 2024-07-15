@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>College Radio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:rgb(3, 244, 252);">
+  <a class="navbar-brand" href="#" style="color:#213A7C; font-weight:bold;">SWARNANDHRA</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:blue;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#" style="color:blue;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    <div class="logo">
+    </div>
+    <div class="bg-image">
+    </div>
+    <div class="login-page">
+        <h1 class="heading1">Login Page</h1>
+        <div class="container">
+            <div class="login-container">
+                <div class="login-box">
+                    <h2 style="margin:20px;">Staff Login</h2>
+
+                    <form id="Staff-login">
+<i class="bi bi-person-circle"></i>
+                        <input style="margin:20px;" type="text" id="staffuser" placeholder="Username" class="up" required><br/>
+<i class="bi bi-lock-fill"></i>
+                        
+                        <input style="margin:20px;" type="password" id="staffpass" placeholder="Password" class="up" required><br/>
+                        
+                        <button onclick="staffloginsuccess()" type="submit">Login</button>
+                        <h2 class="heading2" style="margin:20px;"><a style="color:yellow;" href="forgot.html">Forgot Password??</a></h2>
+                        <p1 class="para1">Don't have an account? <a href="register.html" style="color:yellow;">Register</a></p1>
+                    </form>
+
+                </div>
+                <div class="login-box">
+                    <h2 style="margin:20px;">Student Login</h2>
+
+                    <form id="staff-login">
+<i class="bi bi-person-circle"></i>
+                        <input style="margin:20px;" type="text" id="studentuser" placeholder="Username" class="up" required><br/>
+<i class="bi bi-lock-fill"></i>
+                        
+                        <input style="margin:20px;" type="password" id="studentpass" placeholder="Password" class="up" required><br/>
+                        
+                        <button onclick="studentloginsuccess()" type="submit" >Login</button>
+                        <h2 class="heading2" style="margin:20px;"><a style="color:yellow;" href="forgot.html">Forgot Password??</a></h2>
+                        <p1 class="para1">Don't have an account? <a href="register.html" style="color:yellow;">Register</a></p1>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+function staffloginsuccess(){
+var staffuser=document.getElementById("staffuser").value;
+var staffpass=document.getElementById("staffpass").value;
+if (staffuser==""){
+alert("Enter Staff Username");
+return false;
+}
+else if (staffpass==""){
+alert("Enter Staff Password");
+return false;
+}
+else{
+alert("Login Success");
+}
+}
+
+function studentloginsuccess(){
+var studentuser=document.getElementById("studentuser").value;
+var studentpass=document.getElementById("studentpass").value;
+if (studentuser==""){
+alert("Enter Student Username");
+return false;
+}
+else if (studentpass==""){
+alert("Enter Student Password");
+return false;
+}
+else{
+alert("Login Success");
+}
+}
+</script>
+</html>

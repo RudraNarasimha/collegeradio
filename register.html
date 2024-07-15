@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register </title> 
+    <link rel="stylesheet" href="registerstyle.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2>Registration</h2>
+    <form action="#">
+      <div class="input-box">
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <input type="text" id="username" placeholder="Enter username" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="create" placeholder="Create password" required>
+      </div>
+      <div class="input-box">
+        <input type="password" id="confirm" placeholder="Confirm password" required>
+      </div>
+      <div class="policy">
+        <input type="checkbox">
+        <h3>I accept all terms & condition</h3>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" onclick="registerfunction()" value="Register Now">
+      </div>
+      <div class="text">
+        <h3>Already have an account? <a href="index.html">Login now</a></h3>
+      </div>
+    </form>
+  </div>
+</body>
+<script>
+function registerfunction(){
+var name=document.getElementById("name").value;
+var username=document.getElementById("username").value;
+var createpass=document.getElementById("create").value;
+var confirmpass=document.getElementById("confirm").value;
+if (name==""){
+alert("Enter Name");
+return false;
+}
+else if (username==""){
+alert("Enter Username");
+return false;
+}
+else if (create==""){
+alert("Enter Password");
+return false;
+}
+else if (confirm==""){
+alert("Enter password again");
+return false;
+}
+else{
+alert("Registered Successfully");
+}
+}
+
+</script>
+</html>

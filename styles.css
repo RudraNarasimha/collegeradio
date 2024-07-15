@@ -1,0 +1,97 @@
+<--.bg-image {
+    background-image: url("https://cache.careers360.mobi/media/colleges/social-media/media-gallery/8914/2019/3/6/Campus%20view%20of%20Swarnandhra%20College%20of%20Engineering%20and%20Technology,%20Narsapur_Campus-view.jpg");
+    height: 700px;
+    width: 1450px;
+    background-size: cover;
+    border-radius: 20px;
+
+}-->
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    background-image: url("https://www.swarnandhra.ac.in/img/logo/swarnandhra-logo.png");
+    height: 210px;
+    width: 850px;
+    background-size: cover;
+    margin: 30px 250px;
+}
+
+.login-page {
+background-image: url("https://cache.careers360.mobi/media/colleges/social-media/media-gallery/8914/2019/3/6/Campus%20view%20of%20Swarnandhra%20College%20of%20Engineering%20and%20Technology,%20Narsapur_Campus-view.jpg");
+    height: 700px;
+    width: 1447px;
+    background-size: cover;
+    border-radius: 20px;
+     <--background-color: #03f4fc;
+    background-size: cover;
+    border-radius: 20px;-->
+
+}
+
+.heading1 {
+    font-family: Playfair display SC;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 20px;
+
+}
+
+.heading2 {
+    font-family: Arial;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.para1 {
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.login-box {
+    background-color: #4070f4;
+    padding: 10px;
+    border: 4px;
+    border-radius: 20px;
+    color: #fff;
+    margin: 30px;
+    font-family: Playfair Display SC;
+}
+
+.up {
+    border-radius: 8px;
+    outline: none;
+    border-width: 0px;
+}
+
+.login-box button {
+    padding: 10px;
+    background-color: #2dbd06;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    width: 100px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.login-box button:hover {
+    background-color: #02781c;
+}
